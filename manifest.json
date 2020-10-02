@@ -1,11 +1,11 @@
 {
-  "name": "",
-  "description": "",
-  "short_name": "",
+  "name": "Taste Of Home",
+  "description": "Get access to recipes from all over the world. Search for an ingredient or a specific recipe",
+  "short_name": "Recipe'ly",
   "start_url": ".",
   "display": "standalone",
-  "background-color": "",
-  "theme-color": "",
+  "background-color": "#7b2f0e",
+  "theme-color": "#360408",
   "icons": [
     {
       "src": "./icons/favicon-32x32.png",
@@ -15,6 +15,16 @@
     {
       "src": "./icons/favicon-96x96.png",
       "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "./icons/favicon-196x196.png",
+      "sizes": "196x196",
+      "type": "image/png"
+    },
+    {
+      "src": "./icons/favicon-228x228.png",
+      "sizes": "228x228",
       "type": "image/png"
     },
     {
