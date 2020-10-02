@@ -171,7 +171,7 @@ header input:focus {
   top: 33%;
   right: 26.5%;
   font-size: 0.75rem;
-  color: var(--secondary-color);
+  color: var(--tertiary-background-color);
   display: none;
 }
 
@@ -258,7 +258,7 @@ header input:focus {
 }
 
 .fav-meals li span {
-  color: var(--primary-background-color);
+  color: var(--secondary-color);
   font-size: 0.8rem;
   display: inline-block;
   overflow: hidden;
