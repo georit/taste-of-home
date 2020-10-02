@@ -1,16 +1,16 @@
 /* !********** CUSTOM VARIABLES ********* */
 :root {
   /* *** FONTS *** */
-  --primary-font-family: ;
-  --heading-font-family: ;
+  --primary-font-family: "Roboto", sans-serif;
+  --heading-font-family: "Modak", cursive;
 
   /* *** COLORS *** */
-  --primary-background-color: ;
-  --secondary-background-color: ;
-  --tertiary-background-color: ;
-  --primary-color: ;
-  --secondary-color: ;
-  --tertiary-color: ;
+  --primary-background-color: #7b2f0e;
+  --secondary-background-color: #efe7dd;
+  --tertiary-background-color: #c17a48;
+  --primary-color: #ffffff;
+  --secondary-color: #360408;
+  --tertiary-color: #dab897;
 }
 
 /* !********** GENERAL ********* */

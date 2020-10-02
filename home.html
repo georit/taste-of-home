@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Recipely</title>
+    <title>Taste of Home</title>
     <!-- !*** STARTUP *** -->
     <link rel="manifest" href="./manifest.json" />
     <meta charset="UTF-8" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-title" content="" />
+    <meta name="apple-mobile-web-app-title" content="Taste of Home" />
     <meta
       name="apple-mobile-web-app-status-bar-style"
       content="black-translucent"
@@ -22,6 +22,8 @@
     <link rel="icon" sizes="16x16" href="./icons/favicon-16x16.png" />
     <link rel="icon" sizes="32x32" href="./icons/favicon-32x32.png" />
     <link rel="icon" sizes="96x96" href="./icons/favicon-96x96.png" />
+    <link rel="icon" sizes="196x196" href="./icons/favicon-196x196.png" />
+    <link rel="icon" sizes="228x228" href="./icons/favicon-228x228.png" />
     <link
       rel="apple-touch-icon"
       sizes="120x120"
@@ -54,6 +56,44 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <div class="mobile-container">
+      <header>
+        <img src="./img/logo.png" alt="logo" class="logo" />
+        <input type="text" id="search-term" placeholder="Search" />
+        <button class="btn btn-clear btn-clear-search">
+          <i class="fas fa-times-circle"></i>
+        </button>
+        <button class="btn btn-search" id="btn-search">
+          <i class="fas fa-search"></i>
+        </button>
+        <div class="get-random-meal">
+          <button class="btn btn-randomize" id="btn-randomize">
+            <i class="fas fa-random"></i>
+          </button>
+        </div>
+      </header>
+      <div class="fav-container">
+        <h3>My Favorite Recipes</h3>
+        <ul class="fav-meals" id="fav-meals"></ul>
+      </div>
+      <div class="meals" id="meals"></div>
+
+      <div class="popup-container hidden" id="meal-popup">
+        <div class="popup">
+          <button id="btn-close-popup">
+            <i class="fas fa-times-circle"></i>
+          </button>
+
+          <div class="meal-info" id="meal-info"></div>
+        </div>
+      </div>
+
+      <!-- === Credits === -->
+      <p class="copy">
+        Made with <i class="fas fa-heart"></i> by
+        <span class="dev-name">George Mapaya</span>.
+      </p>
+    </div>
     <!-- *** SCRIPTS *** -->
     <script src="./js/app.js"></script>
   </body>
