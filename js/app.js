@@ -85,7 +85,7 @@ function addMeal(mealData, random = false) {
 		${
       random
         ? `<span class="random">
-		Random Cocktail
+		Random Recipe
 	</span>`
         : ""
     }
