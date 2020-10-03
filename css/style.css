@@ -73,7 +73,7 @@ img {
 
 /* ********** MOBILE CONTAINER ********* */
 .mobile-container {
-  background: var(--primary-background-color);
+  background: var(--secondary-background-color);
   width: 100vw;
   height: 100vh;
   position: relative;
@@ -99,23 +99,29 @@ mobile-container::-webkit-scrollbar {
 header {
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  position: relative;
+  justify-content: space-between;
+  padding: 0rem 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: var(--primary-background-color);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
   height: 57px;
   width: auto;
-  position: absolute;
+  /* position: absolute;
   top: 5px;
-  left: 5px;
+  left: 5px; */
 }
 
 .get-random-meal {
-  position: absolute;
+  /* position: absolute;
   top: 5px;
-  right: 5px;
+  right: 5px; */
   height: 57px;
   width: 57px;
   display: flex;
@@ -132,6 +138,14 @@ header {
   -moz-appearance: none;
   -webkit-appearance: none;
   cursor: pointer;
+}
+
+.search-container {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 header input {
@@ -168,9 +182,10 @@ header input:focus {
 }
 
 .btn-clear-search {
-  top: 33%;
-  right: 26.5%;
-  font-size: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 24%;
+  font-size: 0.8rem;
   color: var(--tertiary-background-color);
   display: none;
 }
@@ -189,7 +204,7 @@ header input:focus {
   border-bottom-right-radius: 25px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  margin-left: -0.5px;
+  margin-left: 0px;
   cursor: pointer;
   appearance: none;
   -moz-appearance: none;
@@ -198,14 +213,14 @@ header input:focus {
 
 /* ***** Favorites Container ***** */
 .fav-container {
-  padding: 0.25rem 0.5rem 0;
+  padding: 60px 0.5rem 0;
   text-align: center;
-  background-color: var(--secondary-background-color);
-  min-height: 20vh;
+  background-color: var(--primary-color);
+  min-height: 33vh;
 }
 
 .fav-container h3 {
-  color: var(--secondary-color);
+  color: var(--primary-background-color);
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   margin: 0.5rem 1rem 2rem;
@@ -215,7 +230,7 @@ header input:focus {
 
 .fav-container h3::after {
   content: "";
-  border-bottom: 1.5px solid var(--secondary-color);
+  border-bottom: 1.5px solid var(--primary-background-color);
   border-radius: 100%;
   width: 15%;
   position: absolute;
@@ -253,12 +268,12 @@ header input:focus {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  border: 2px solid var(--tertiary-color);
-  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+  border: 2px solid var(--secondary-background-color);
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
 }
 
 .fav-meals li span {
-  color: var(--secondary-color);
+  color: var(--primary-background-color);
   font-size: 0.8rem;
   display: inline-block;
   overflow: hidden;
@@ -343,14 +358,14 @@ header input:focus {
 
 .meal-name {
   margin: 0;
-  color: var(--secondary-background-color);
+  color: var(--primary-background-color);
   text-transform: capitalize;
 }
 
 .btn-favorite {
   border: none;
   background-color: transparent;
-  color: var(--secondary-background-color);
+  color: var(--primary-background-color);
   font-size: 1.2rem;
   cursor: pointer;
 }
@@ -358,7 +373,7 @@ header input:focus {
 /* ***** Popup display ***** */
 .popup-container {
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.4);
   left: 0;
   right: 0;
   bottom: 0;
@@ -366,6 +381,7 @@ header input:focus {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 100;
 }
 
 .popup-container.hidden {
@@ -498,7 +514,7 @@ header input:focus {
 }
 
 .copy .fa-heart {
-  color: var(--secondary-background-color);
+  color: var(--primary-background-color);
 }
 
 .dev-name {
@@ -512,12 +528,22 @@ header input:focus {
     padding: 1vh 0;
   }
 
+  header {
+    width: 750px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
   .mobile-container {
     width: 750px;
     min-height: 100vh;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     margin: auto;
     border-radius: 25px;
+  }
+
+  .fav-container {
+    width: 750px;
   }
 
   .popup {
