@@ -4,7 +4,7 @@
   "short_name": "Recipe'ly",
   "start_url": ".",
   "display": "standalone",
-  "background-color": "#7b2f0e",
+  "background-color": "#fff",
   "theme-color": "#360408",
   "icons": [
     {
