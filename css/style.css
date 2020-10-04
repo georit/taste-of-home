@@ -456,7 +456,7 @@ header input:focus {
   width: 70%;
   height: auto;
   border-radius: 5px;
-  object-fit: fill;
+  object-fit: none;
 }
 
 .meal-info ul {
