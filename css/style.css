@@ -100,7 +100,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0rem 1rem;
+  padding: 20px 1rem 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -213,7 +213,7 @@ header input:focus {
 
 /* ***** Favorites Container ***** */
 .fav-container {
-  padding: 60px 0.5rem 0;
+  padding: 80px 0.5rem 0;
   text-align: center;
   background-color: var(--primary-color);
   min-height: 33vh;
