@@ -18,6 +18,10 @@
   box-sizing: border-box;
 }
 
+*::-webkit-scrollbar {
+  width: 0px;
+}
+
 body {
   background-color: var(--primary-background-color);
   font-size: 16px;
@@ -29,6 +33,7 @@ body {
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
+  -webkit-overflow-scrolling: auto;
 }
 
 html,
