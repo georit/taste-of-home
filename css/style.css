@@ -392,6 +392,7 @@ header input:focus {
 .popup-container.hidden {
   opacity: 0;
   pointer-events: none;
+  position: relative;
 }
 
 .popup {
@@ -506,6 +507,7 @@ header input:focus {
   font-size: 2rem;
   cursor: pointer;
   color: var(--secondary-color);
+  z-index: 200;
 }
 
 /* ***** Copyright info ***** */
