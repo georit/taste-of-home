@@ -49,5 +49,7 @@
     }
   ],
   "lang": "en",
-  "dir": "ltr"
+  "dir": "ltr",
+  "manifest_version": 2,
+  "version": "1.0.0"
 }
