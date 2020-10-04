@@ -500,8 +500,8 @@ header input:focus {
 
 #btn-close-popup {
   position: fixed;
-  top: 0%;
-  right: 0%;
+  top: 0;
+  right: 0;
   background-color: transparent;
   border: none;
   font-size: 2rem;
