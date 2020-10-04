@@ -108,6 +108,12 @@ header {
   z-index: 99;
   background-color: var(--primary-background-color);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  /* Status bar height on iOS 10 */
+  padding-top: 20px;
+  /* Status bar height on iOS 11.0 */
+  padding-top: constant(safe-area-inset-top);
+  /* Status bar height on iOS 11+ */
+  padding-top: env(safe-area-inset-top);
 }
 
 .logo {
