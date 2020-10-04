@@ -404,7 +404,7 @@ header input:focus {
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
-  padding: 0 1rem 3rem;
+  padding: 2rem 1rem 3rem;
   position: relative;
   overflow: auto;
   height: 98%;
@@ -501,7 +501,7 @@ header input:focus {
 #btn-close-popup {
   position: fixed;
   top: 3%;
-  right: 0;
+  right: -2%;
   background-color: transparent;
   border: none;
   font-size: 2rem;
