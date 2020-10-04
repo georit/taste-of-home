@@ -149,7 +149,7 @@ header {
 }
 
 header input {
-  width: 60%;
+  width: 85%;
   padding: 0.5rem 1rem;
   border: 1px solid var(--tertiary-color);
   border-top-left-radius: 25px;
@@ -184,7 +184,7 @@ header input:focus {
 .btn-clear-search {
   top: 50%;
   transform: translateY(-50%);
-  right: 24%;
+  right: 12%;
   font-size: 0.8rem;
   color: var(--tertiary-background-color);
   display: none;
@@ -302,7 +302,7 @@ header input:focus {
 }
 
 .no-results-for-search {
-  color: var(--primary-color);
+  color: var(--primary-background-color);
   text-align: center;
   padding: 8.49vh 7.26vw;
 }
@@ -313,7 +313,7 @@ header input:focus {
 }
 
 .search-word {
-  color: var(--secondary-background-color);
+  color: var(--secondary-color);
 }
 
 .meal {
@@ -346,7 +346,7 @@ header input:focus {
 .meal-header img {
   width: 100%;
   height: 36.05vh;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 .meal-body {
